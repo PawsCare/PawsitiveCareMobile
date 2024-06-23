@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".distemper">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_biru_tua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/panah"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Penyakit Mata"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_konten"
+                android:layout_width="0dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Kenali Penyakit Mata pada Anjing dan Kucing"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/distemper1"
+                android:layout_width="335sp"
+                android:layout_height="127dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/sakitmata"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:text="Penyakit mata pada hewan melibatkan sejumlah kondisi yang dapat memengaruhi kesehatan mata, terutama pada hewan peliharaan seperti kucing dan anjing. Berikut adalah informasi terkait penyakit mata pada hewan:\n\n
+Ciri-ciri Terinfeksi:\n
+1. Mata Merah atau Bengkak: Hewan yang terinfeksi dapat mengalami kemerahan atau pembengkakan pada mata.\n
+2. Keluarnya Cairan atau Nanah: Gejala ini dapat mencakup keluarnya cairan atau nanah dari mata yang terinfeksi.\n
+3. Kesulitan Membuka atau Menutup Mata: Infeksi dapat menyebabkan kesulitan dalam membuka atau menutup mata.\n\n
+Gejala:\n
+Gejala umum melibatkan mata merah, keluarnya cairan, dan ketidaknyamanan pada hewan peliharaan.\n\n
+Pertolongan Pertama:\n
+Isolasi dan Kebersihan: Isolasi hewan yang terinfeksi untuk mencegah penularan. Bersihkan mata dengan hati-hati menggunakan kapas yang dibasahi dengan air hangat .\n
+\nPenularan dan Sumber Penyakit:\n
+Penyakit mata dapat disebabkan oleh infeksi bakteri, virus, paparan bahan iritan, atau kondisi medis tertentu.\n
+\nCara Mencegah:\n
+Kebersihan Rutin: Membersihkan mata secara teratur untuk mencegah infeksi.\n
+Vaksinasi: Vaksinasi yang sesuai dapat membantu mencegah beberapa penyakit mata pada hewan peliharaan.\n
+\nCara Mengobati:\n
+Pengobatan tergantung pada penyebabnya, termasuk penggunaan antibiotik atau antivirus dalam bentuk tetes atau salep mata.\n
+\nRespons Setelah Gigitan atau Kontak Mencurigakan\n
+ Tidak berlaku untuk penyakit mata. Respons ini lebih relevan untuk penyakit menular seperti rabies.\n
+\nPemilik hewan sebaiknya segera mengonsultasikan gejala dengan dokter hewan untuk diagnosis dan penanganan yang tepat."
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/distemper1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

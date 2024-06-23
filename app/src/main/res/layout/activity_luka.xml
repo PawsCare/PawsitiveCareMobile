@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Luka">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_biru_tua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/panah"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Mengobati Luka Anjing"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_konten"
+                android:layout_width="0dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Cara Mengobati Luka pada Anjing agar Tidak Terinfeksi"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/distemper1"
+                android:layout_width="335sp"
+                android:layout_height="127dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/luka"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:text="Mengobati luka pada anjing dengan benar adalah kunci penting agar tidak terjadi infeksi yang dapat membahayakan kesehatan mereka. Langkah awal yang perlu dilakukan adalah membersihkan luka secara hati-hati. Namun, perawatan ini harus dilakukan dengan cermat untuk menghindari komplikasi.\n\n
+
+Ketika anjing kesayangan mengalami luka, pertolongan pertama yang tepat sangat penting untuk mencegah infeksi lebih lanjut. Sumber resmi seperti buku 'Mengenal Anjing' menyarankan beberapa metode tergantung pada jenis dan penyebab luka. Misalnya, untuk luka akibat sengatan lebah, memberikan antihistamin dan kompres dingin dapat membantu. Sedangkan luka akibat gigitan hewan sebaiknya diberi antiseptik cair.\n\n
+
+Luka bakar pada anjing dapat diatasi dengan krim antibakteri dan air dingin, sementara luka kecil dapat dibersihkan dengan peroxide dan diberi merthiolate untuk mempromosikan penyembuhan. Untuk luka yang lebih serius, penting untuk memberi pertolongan pertama dengan memperlakukan luka dan membatasi pendarahan sebelum membawa anjing ke dokter hewan.\n\n
+
+Langkah-langkah umum untuk mengobati luka pada anjing termasuk menenangkan anjing, memeriksa luka dengan teliti, dan memantau kondisinya secara berkala. Pemangkasan bulu di sekitar luka juga dapat memudahkan perawatan. Jika luka terlihat serius, sebaiknya konsultasikan langsung dengan dokter hewan untuk perawatan lebih lanjut.\n\n
+
+Dengan menjaga perawatan luka pada anjing secara hati-hati dan tepat waktu, kita dapat memastikan mereka tetap sehat dan nyaman dalam proses pemulihan mereka."
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/distemper1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

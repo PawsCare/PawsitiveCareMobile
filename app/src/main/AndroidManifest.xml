@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_shape"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PawsitiveCare"
+        tools:targetApi="31">
+        <activity
+            android:name=".Luka"
+            android:exported="false" />
+        <activity
+            android:name=".Kutu"
+            android:exported="false" />
+        <activity
+            android:name=".BeepetMakassar"
+            android:exported="false" />
+        <activity
+            android:name=".BeepetDaengta"
+            android:exported="false" />
+        <activity
+            android:name=".BeepetAmigos"
+            android:exported="false" />
+        <activity
+            android:name=".Delivery"
+            android:exported="false" />
+        <activity
+            android:name=".ChatDokter"
+            android:exported="false" />
+        <activity
+            android:name=".CheckOut"
+            android:exported="false" />
+        <activity
+            android:name=".Cart"
+            android:exported="false" />
+        <activity
+            android:name=".ShopDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ShopNew"
+            android:exported="false" />
+        <activity
+            android:name=".ItemShop8"
+            android:exported="false" />
+        <activity
+            android:name=".ItemShop7"
+            android:exported="false" />
+        <activity
+            android:name=".ItemShop6"
+            android:exported="false" />
+        <activity
+            android:name=".ItemShop5"
+            android:exported="false" />
+        <activity
+            android:name=".ItemShop4"
+            android:exported="false" />
+        <activity
+            android:name=".ItemShop3"
+            android:exported="false" />
+        <activity
+            android:name=".ItemShop2"
+            android:exported="false" />
+        <activity
+            android:name=".ItemShop1"
+            android:exported="false" />
+        <activity
+            android:name=".vaksincat_purevax"
+            android:exported="false" />
+        <activity
+            android:name=".vaksincat_felocell"
+            android:exported="false" />
+        <activity
+            android:name=".vaksin_dog"
+            android:exported="false" />
+        <activity
+            android:name=".vaksin_catdog"
+            android:exported="false" />
+        <activity
+            android:name=".search_klinik"
+            android:exported="false" />
+        <activity
+            android:name=".sakit_mata"
+            android:exported="false" />
+        <activity
+            android:name=".rawat_dog"
+            android:exported="false" />
+        <activity
+            android:name=".rawat_cat"
+            android:exported="false" />
+        <activity
+            android:name=".donasi_konten"
+            android:exported="false" />
+        <activity
+            android:name=".layanan"
+            android:exported="false" />
+        <activity
+            android:name=".janjiKunjungan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".donasi"
+            android:exported="false" />
+        <activity
+            android:name=".distemper"
+            android:exported="false" />
+        <activity
+            android:name=".cekkucing"
+            android:exported="false" />
+        <activity
+            android:name=".cekanjing"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationEmail"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".penyakit_rabies"
+            android:exported="false" />
+        <activity
+            android:name=".Shop"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Account_username"
+            android:exported="false" />
+        <activity
+            android:name=".Account_address"
+            android:exported="false" />
+        <activity
+            android:name=".Account_contact_information"
+            android:exported="false" />
+        <activity
+            android:name=".Account_password"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsAkun"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

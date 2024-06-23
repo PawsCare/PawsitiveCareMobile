@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9F9F9">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeFragment">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dashboardnew"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/radiusbackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_radius"
+            app:layout_constraintBottom_toBottomOf="@id/banner" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/name_banner"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingStart="40dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile_picture_default"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/username"
+            app:layout_constraintStart_toStartOf="@+id/username"
+            app:layout_constraintTop_toTopOf="@+id/username"
+            app:layout_constraintVertical_bias="1.0"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="6"
+            android:shadowRadius="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/radiusbackground"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:text="Perawatan terbaik untuk hewan\npeliharaan kesayangan Anda"/>
+
+        <ImageView
+            android:id="@+id/chat_dokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_dashboard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radiusbackground" />
+
+        <ImageView
+            android:id="@+id/status_paket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_dashboard"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radiusbackground"/>
+
+        <ImageView
+            android:id="@+id/buat_janji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_dashboard"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/chat_dokter"
+            app:layout_constraintEnd_toStartOf="@+id/status_paket"
+            app:layout_constraintTop_toTopOf="@+id/radiusbackground"/>
+
+        <ImageView
+            android:id="@+id/pawmart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_dashboard"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chat_dokter"/>
+
+        <ImageView
+            android:id="@+id/donasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_dashboard"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/status_paket"/>
+
+        <ImageView
+            android:id="@+id/maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_dashboard"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/pawmart"
+            app:layout_constraintEnd_toStartOf="@+id/donasi"
+            app:layout_constraintTop_toBottomOf="@+id/buat_janji"/>
+
+        <ImageView
+            android:id="@+id/ic_chat_dokter"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="7sp"
+            android:src="@drawable/ic_chat_dokter"
+            app:layout_constraintEnd_toEndOf="@+id/chat_dokter"
+            app:layout_constraintStart_toStartOf="@+id/chat_dokter"
+            app:layout_constraintTop_toTopOf="@+id/chat_dokter" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Chat Dokter"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/chat_dokter"
+            app:layout_constraintEnd_toEndOf="@+id/chat_dokter"
+            app:layout_constraintStart_toStartOf="@+id/chat_dokter"
+            app:layout_constraintTop_toBottomOf="@+id/ic_chat_dokter" />
+
+        <ImageView
+            android:id="@+id/ic_buat_janji"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_buat_janji"
+            android:layout_marginTop="7dp"
+            app:layout_constraintEnd_toStartOf="@+id/status_paket"
+            app:layout_constraintStart_toEndOf="@+id/chat_dokter"
+            app:layout_constraintTop_toTopOf="@+id/buat_janji" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Buat Janji"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/buat_janji"
+            app:layout_constraintEnd_toStartOf="@+id/status_paket"
+            app:layout_constraintStart_toEndOf="@+id/chat_dokter"
+            app:layout_constraintTop_toBottomOf="@+id/ic_buat_janji" />
+
+        <ImageView
+            android:id="@+id/ic_status_paket"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="7sp"
+            android:src="@drawable/ic_status_paket"
+            app:layout_constraintEnd_toEndOf="@+id/status_paket"
+            app:layout_constraintStart_toStartOf="@+id/status_paket"
+            app:layout_constraintTop_toTopOf="@+id/status_paket" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Status Paket"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/status_paket"
+            app:layout_constraintEnd_toEndOf="@+id/status_paket"
+            app:layout_constraintStart_toStartOf="@+id/status_paket"
+            app:layout_constraintTop_toBottomOf="@+id/ic_status_paket" />
+
+        <ImageView
+            android:id="@+id/ic_pawmart"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_pawmart"
+            app:layout_constraintEnd_toEndOf="@id/pawmart"
+            app:layout_constraintStart_toStartOf="@id/pawmart"
+            app:layout_constraintTop_toTopOf="@+id/pawmart" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pawmart"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pawmart"
+            app:layout_constraintEnd_toEndOf="@+id/pawmart"
+            app:layout_constraintStart_toStartOf="@+id/pawmart"
+            app:layout_constraintTop_toBottomOf="@+id/ic_pawmart" />
+
+        <ImageView
+            android:id="@+id/ic_maps"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/cart_icon2"
+            app:layout_constraintEnd_toStartOf="@+id/donasi"
+            app:layout_constraintStart_toEndOf="@+id/pawmart"
+            app:layout_constraintTop_toTopOf="@+id/maps" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Keranjang"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/maps"
+            app:layout_constraintEnd_toStartOf="@+id/donasi"
+            app:layout_constraintStart_toEndOf="@+id/pawmart"
+            app:layout_constraintTop_toBottomOf="@+id/ic_maps" />
+
+        <ImageView
+            android:id="@+id/ic_donasi"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_donasi"
+            app:layout_constraintEnd_toEndOf="@+id/donasi"
+            app:layout_constraintStart_toStartOf="@+id/donasi"
+            app:layout_constraintTop_toTopOf="@+id/donasi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Donasi"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/donasi"
+            app:layout_constraintEnd_toEndOf="@+id/donasi"
+            app:layout_constraintStart_toStartOf="@+id/donasi"
+            app:layout_constraintTop_toBottomOf="@+id/ic_donasi" />
+
+        <TextView
+            android:id="@+id/promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotomedium"
+            android:text="Promo Menarik"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/pawmart" />
+
+        <HorizontalScrollView
+            android:id="@+id/promo_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/promo"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F9F9F9"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="280dp"
+                    android:layout_height="157dp"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:id="@+id/promo_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:src="@drawable/promosi_1" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="280dp"
+                    android:layout_height="157dp"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:id="@+id/promo_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:src="@drawable/promosi_2"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/penyakit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info Seputar Penyakit Umum"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotomedium"
+            app:layout_constraintTop_toBottomOf="@+id/promo_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <HorizontalScrollView
+            android:id="@+id/penyakit_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/penyakit"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="342dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/white"
+                        android:scaleX="2"
+                        android:src="@drawable/rabies2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Pertolongan Pertama Setelah Digigit\nHewan Penular Rabies"
+                        android:fontFamily="@font/robotomedium"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/button_rabies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="240dp"
+                        android:layout_marginTop="150dp"
+                        android:background="@drawable/button_penyakit"
+                        android:fontFamily="@font/robotomedium"
+                        android:hint="Rabies"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="342dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:scaleX="2"
+                        android:background="@color/white"
+                        android:src="@drawable/info_distemper"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Kenali Penyakit Distemper Pada Anjing\ndan Kucing"
+                        android:fontFamily="@font/robotomedium"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/button_stemper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="240dp"
+                        android:layout_marginTop="150dp"
+                        android:background="@drawable/button_penyakit"
+                        android:fontFamily="@font/robotomedium"
+                        android:hint="Distemper"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="342dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/white"
+                        android:scaleX="2.1"
+                        android:src="@drawable/luka" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Cara Mengobati Luka pada Anjing agar Tidak Terinfeksi"
+                        android:fontFamily="@font/robotomedium"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/button_luka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="240dp"
+                        android:layout_marginTop="150dp"
+                        android:background="@drawable/button_penyakit"
+                        android:fontFamily="@font/robotomedium"
+                        android:hint="Hewan Luka"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="342dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/white"
+                        android:scaleX="2.5"
+                        android:src="@drawable/kutu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Cara Mengatasi dan Menghilangkan Kutu pada Anjing dan Kucing"
+                        android:fontFamily="@font/robotomedium"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/button_kutu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="240dp"
+                        android:layout_marginTop="150dp"
+                        android:background="@drawable/button_penyakit"
+                        android:fontFamily="@font/robotomedium"
+                        android:hint="Kutu"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

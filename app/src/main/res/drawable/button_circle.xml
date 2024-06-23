@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <!-- Circle -->
+    <path
+        android:fillColor="#EFEFEF"
+        android:pathData="M15,0
+                          A15,15 0 0,1 30,15
+                          A15,15 0 0,1 15,30
+                          A15,15 0 0,1 0,15
+                          A15,15 0 0,1 15,0Z"/>
+    <!-- Horizontal line -->
+    <path
+        android:strokeColor="#113565"
+        android:strokeWidth="2"
+        android:pathData="M9,15.5803H22.5"/>
+    <!-- Arrow -->
+    <path
+        android:strokeColor="#113565"
+        android:strokeWidth="2"
+        android:pathData="M13.5,20.8372
+                          L9,15.5802
+                          L13.5,10.3232"/>
+</vector>

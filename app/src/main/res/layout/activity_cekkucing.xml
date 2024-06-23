@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clear_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        tools:context=".cekkucing">
+
+        <ImageView
+            android:id="@+id/img_cekkucing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_biru_tua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/panah"
+            app:layout_constraintBottom_toBottomOf="@+id/img_cekkucing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_cekkucing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kucing : Pemeriksaan Dokter Hewan"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_cekkucing"
+            app:layout_constraintEnd_toEndOf="@+id/img_cekkucing"
+            app:layout_constraintStart_toEndOf="@+id/backbutton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bg_cekkucing1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_layanan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_cekkucing" />
+
+        <ImageView
+            android:id="@+id/img_cekkucing1"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:background="@drawable/cek"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_cekkucing1"
+            app:layout_constraintEnd_toEndOf="@+id/bg_cekkucing1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_cekkucing" />
+
+        <ImageView
+            android:id="@+id/bg_cekkucing2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_cekkucing1" />
+
+        <TextView
+            android:id="@+id/subjudul_cekkucing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Kucing : Pemeriksaan Dokter Hewan"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_cekkucing2"
+            app:layout_constraintStart_toStartOf="@+id/bg_cekkucing2"
+            app:layout_constraintTop_toTopOf="@id/bg_cekkucing2" />
+
+        <TextView
+            android:id="@+id/text_dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Cek Dokter Hewan - Kucing"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/subjudul_cekkucing"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_cekkucing" />
+
+        <ImageView
+            android:id="@+id/bg_cekkucing3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_cekkucing2" />
+
+        <TextView
+            android:id="@+id/subjudul_cekkucing2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="BeePetMart Petshop Makassar"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bg_cekkucing3" />
+
+        <TextView
+            android:id="@+id/text_cat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Mamajang Dalam, Kota Makassar"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@+id/subjudul_cekkucing2"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_cekkucing2" />
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Rp170.000"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="@+id/text_cat2"
+            app:layout_constraintTop_toBottomOf="@+id/text_cat2" />
+
+        <ImageView
+            android:id="@+id/bg_star"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:background="@drawable/star_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="@+id/text_cat2"
+            app:layout_constraintTop_toBottomOf="@+id/text_cat2" />
+
+        <ImageView
+            android:id="@+id/starr"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/starr"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_star"
+            app:layout_constraintEnd_toEndOf="@+id/bg_star"
+            app:layout_constraintStart_toStartOf="@+id/bg_star"
+            app:layout_constraintTop_toTopOf="@+id/bg_star"
+            android:layout_marginEnd="30dp" />
+
+        <TextView
+            android:id="@+id/rate_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotomedium"
+            android:text="4.7"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_star"
+            app:layout_constraintStart_toEndOf="@id/starr"
+            app:layout_constraintTop_toTopOf="@+id/bg_star" />
+
+        <ImageView
+            android:id="@+id/lokasi_beepet"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:background="@drawable/maps_beepet"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_cekkucing3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bg_cekkucing3" />
+
+        <ImageView
+            android:id="@+id/bg_cekkucing4"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_cekkucing3" />
+
+        <TextView
+            android:id="@+id/subjudul_cekkucing3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Deskripsi Layanan"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/bg_cekkucing4"
+            app:layout_constraintTop_toTopOf="@+id/bg_cekkucing4" />
+
+        <TextView
+            android:id="@+id/text_cat4"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:justificationMode="inter_word"
+            android:text="Dokter hewan akan memeriksa kewaspadaan, kondisi tubuh dan otot kucing, serta mantel rambut dan kulit untuk mendeteksi kelainan. Mata, telinga, hidung, dan wajah akan diperiksa untuk memastikan tidak ada masalah. Mulut dan gigi akan diperiksa untuk karang gigi atau penyakit gusi. Detak jantung dan suara napas akan didengarkan untuk mendeteksi kelainan. Denyut nadi, kelenjar getah bening, tenggorokan, kaki, dan perut juga akan diperiksa untuk mencari tanda pembengkakan, nyeri, atau ketidaknyamanan."
+            android:textColor="@color/gray"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_cekkucing3" />
+
+        <ImageView
+            android:id="@+id/button_layanan"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/star_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_cekkucing4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/bg_cekkucing4" />
+
+        <TextView
+            android:id="@+id/text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Hubungi WA"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/button_layanan"
+            app:layout_constraintEnd_toEndOf="@+id/button_layanan"
+            app:layout_constraintStart_toStartOf="@+id/button_layanan" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

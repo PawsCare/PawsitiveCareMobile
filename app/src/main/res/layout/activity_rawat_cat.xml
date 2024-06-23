@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    tools:context=".rawat_cat"
+    android:background="@color/clear_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_rawatcat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_biru_tua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/panah"
+        app:layout_constraintBottom_toBottomOf="@+id/img_rawatcat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_rawatcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Kucing : Grooming Komplit"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_rawatcat"
+        app:layout_constraintEnd_toEndOf="@+id/img_rawatcat"
+        app:layout_constraintStart_toEndOf="@+id/backbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bg_rawatcat1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_layanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_rawatcat"/>
+
+    <ImageView
+        android:id="@+id/img_rawatcat1"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:background="@drawable/grooming"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_rawatcat1"
+        app:layout_constraintEnd_toEndOf="@+id/bg_rawatcat1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_rawatcat"
+        android:layout_marginBottom="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/bg_rawatcat2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_rawatcat1"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/subjudul_rawatcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kucing : Grooming Komplit Kutu + Jamur "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_rawatcat2"
+        app:layout_constraintStart_toStartOf="@+id/bg_rawatcat2"
+        app:layout_constraintTop_toTopOf="@id/bg_rawatcat2" />
+
+    <TextView
+        android:id="@+id/text_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Cek Dokter Hewan - Kucing"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/subjudul_rawatcat"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_rawatcat" />
+
+    <ImageView
+        android:id="@+id/bg_rawatcat3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_rawatcat2" />
+
+    <TextView
+        android:id="@+id/subjudul_rawatcat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="BeePetMart Petshop Makassar"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg_rawatcat3"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/text_cat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Mamajang Dalam, Kota Makassar"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/subjudul_rawatcat2"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_rawatcat2"
+        />
+
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Rp105.000"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="@+id/text_cat2"
+        app:layout_constraintTop_toBottomOf="@+id/text_cat2" />
+
+    <ImageView
+        android:id="@+id/bg_star"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:background="@drawable/star_bg"
+        app:layout_constraintStart_toStartOf="@+id/text_cat2"
+        app:layout_constraintTop_toBottomOf="@+id/text_cat2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp" />
+
+    <ImageView
+        android:id="@+id/starr"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/starr"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_star"
+        app:layout_constraintEnd_toEndOf="@+id/bg_star"
+        app:layout_constraintStart_toStartOf="@+id/bg_star"
+        app:layout_constraintTop_toTopOf="@+id/bg_star"
+        android:layout_marginEnd="30dp"/>
+
+    <TextView
+        android:id="@+id/rate_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotomedium"
+        android:text="4.7"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_star"
+        app:layout_constraintStart_toEndOf="@id/starr"
+        app:layout_constraintTop_toTopOf="@+id/bg_star"
+        android:layout_marginStart="5dp"
+        />
+
+
+        <ImageView
+        android:id="@+id/lokasi_beepet"
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:background="@drawable/maps_beepet"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_rawatcat3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg_rawatcat3"
+        android:layout_marginEnd="20dp"/>
+
+    <ImageView
+        android:id="@+id/bg_rawatcat4"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_rawatcat3"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/subjudul_rawatcat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Deskripsi Layanan"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/bg_rawatcat4"
+        app:layout_constraintTop_toTopOf="@+id/bg_rawatcat4"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/text_cat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Kebijakan Pembatalan dan Pengembalian Dana :"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/subjudul_rawatcat3"
+        app:layout_constraintTop_toBottomOf="@+id/subjudul_rawatcat3"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text_cat4"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/text_dog4"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        android:justificationMode="inter_word"
+        app:layout_constraintStart_toStartOf="@+id/text_cat3"
+        app:layout_constraintTop_toBottomOf="@+id/text_cat3"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/button_layanan"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:background="@drawable/star_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_rawatcat4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bg_rawatcat4"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/text_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="Hubungi WA"
+        app:layout_constraintBottom_toBottomOf="@+id/button_layanan"
+        app:layout_constraintEnd_toEndOf="@+id/button_layanan"
+        app:layout_constraintStart_toStartOf="@+id/button_layanan"
+        android:layout_marginBottom="5dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

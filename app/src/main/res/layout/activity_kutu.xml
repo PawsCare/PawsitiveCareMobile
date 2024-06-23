@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Kutu">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_biru_tua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/panah"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Mengatasi Kutu"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_konten"
+                android:layout_width="0dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Cara Mengatasi dan Menghilangkan Kutu pada Anjing dan Kucing"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/distemper1"
+                android:layout_width="335sp"
+                android:layout_height="127dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/kutu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:text="Pemilik hewan peliharaan sering kali panik saat menemukan kutu pada anjing dan kucing kesayangan mereka. Bulu anjing dan kucing sangat rentan terhadap kutu, menyebabkan mereka sering menggaruk-garuk karena gatal. Apapun ras anjing dan kucingnya, jika mereka terkena banyak kutu, biasanya mereka akan menjadi kurus, kurang nafsu makan, lesu, dan rentan terhadap penyakit. Kutu yang sering disebut oleh pemilik hewan peliharaan adalah caplak (ticks) pada anjing dan pinjal (fleas) pada anjing dan kucing.
+\n\n
+
+Ciri-ciri caplak (ticks) :
+\n
+Mampu bertahan hidup selama berbulan-bulan tanpa inang.
+\n
+Tahan terhadap cuaca ekstrem seperti panas terik dan hujan deras. Paling aktif di awal musim hujan.
+\n
+Menempel pada kulit dan menghisap darah di area seperti telinga, sela-sela jari kaki, punggung, dan leher.
+\n
+Jika jumlahnya banyak, bisa menyebabkan anemia bahkan kematian, terutama pada anak anjing.
+\n
+Bisa menularkan penyakit seperti Tick fever yang disebabkan oleh parasit darah (Babesia), Tick Paralysis, dan penyakit lainnya.
+\n\n
+
+Ciri-ciri pinjal (fleas) :
+\n
+Mudah berpindah dari satu inang ke inang lainnya dengan melompat.
+\n
+Bisa menyebabkan anemia dan menjadi pembawa parasit cacing pita (Dhypillidium sp.).
+\n
+Dapat menyebabkan dermatitis alergi yang bisa menular ke manusia.
+\n\n
+
+Cara mengatasi dan menghilangkan kutu pada semua jenis anjing dan kucing :
+\n
+ Melepaskan caplak/pinjal
+\n
+Lepaskan kutu dari anjing atau kucing menggunakan pinset atau sarung tangan. Jepit bagian kepala kutu dan tarik ke atas. Masukkan kutu ke dalam minyak tanah atau semprot dengan obat pembasmi serangga.
+\n
+  Memilih produk anti kutu
+\n
+Jika menggunakan spray atau shampoo, anjing atau kucing harus disemprot atau dimandikan lagi dalam 7-14 hari. Untuk produk pour on/spot on, aplikasi ulang setiap 1-2 bulan. Collar anti kutu bisa bertahan sekitar 1-5 bulan. Semua produk ini berguna untuk mencegah serangan kutu dan merawat bulu hewan peliharaanmu.
+\n
+ Konsultasi dengan dokter hewan
+\n
+Konsultasikan dengan dokter hewan untuk menentukan produk yang tepat untuk menghilangkan kutu dan cara merawat anjing atau kucing setelah kutu hilang.
+\n
+ Membersihkan rumah dan lingkungan
+\n
+Bersihkan rumah dengan rutin mem-vakum, mencuci alas tidur hewan peliharaan, melakukan fogging di area rumah, garasi, dan halaman, terutama di sela-sela furniture dan tembok.
+\n
+  Rutin memeriksa
+\n
+Periksa tubuh dan bulu anjing atau kucing setelah mereka bermain di luar rumah. Pastikan mereka tidak membawa caplak atau pinjal ke dalam rumah.
+\n\n
+
+Sekarang kamu sudah tahu cara menghilangkan kutu pada anjing dan kucing serta cara merawat mereka. Jaga kesehatan mereka, Pemilik Hewan Peliharaan.\n"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/distemper1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

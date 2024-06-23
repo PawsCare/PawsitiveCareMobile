@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ChatDokter">
+
+        <ImageView
+            android:id="@+id/img_beepet_daengta"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_biru_tua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/panah"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_beepet_daengta"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/img_beepet_daengta" />
+
+        <TextView
+            android:id="@+id/text_beepet_daengta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Chat Dokter"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginEnd="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_beepet_daengta"
+            app:layout_constraintEnd_toEndOf="@+id/img_beepet_daengta"
+            app:layout_constraintStart_toEndOf="@+id/backbutton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/bg_dokter1"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="25dp"
+            android:alpha="0.2"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_dokter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_beepet_daengta" />
+
+        <ImageView
+            android:id="@+id/dr1_ahmad"
+            android:layout_width="130dp"
+            android:layout_height="155dp"
+            android:background="@drawable/dr_bryan_rahayu"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_dokter1"
+            app:layout_constraintEnd_toEndOf="@+id/bg_dokter1"
+            app:layout_constraintStart_toStartOf="@+id/bg_dokter1"
+            app:layout_constraintTop_toTopOf="@id/bg_dokter1" />
+
+        <TextView
+            android:id="@+id/subjudul_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Dr. Bryan Rahayu"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/bg_dokter1"
+            app:layout_constraintTop_toTopOf="@+id/bg_dokter1" />
+
+        <TextView
+            android:id="@+id/text_subjudul6"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dokter Hewan  Kucing &amp; Anjing"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/subjudul_6"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_6" />
+
+        <TextView
+            android:id="@+id/bg_pengalaman"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:text="5 Tahun"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:paddingLeft="35dp"
+            android:paddingTop="3dp"
+            android:background="@drawable/bg_chat_dokter"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@+id/text_subjudul6"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul6" />
+
+        <ImageView
+            android:id="@+id/ic_pengalaman"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/pengalaman"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_pengalaman"
+            app:layout_constraintStart_toStartOf="@+id/bg_pengalaman"
+            app:layout_constraintTop_toTopOf="@+id/bg_pengalaman"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/bg_rate"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_chat_dokter"
+            android:fontFamily="@font/robotomedium"
+            android:paddingLeft="35dp"
+            android:paddingTop="4dp"
+            android:text="85%"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@+id/bg_pengalaman"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul6" />
+
+        <ImageView
+            android:id="@+id/ic_rate"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/bg_rate"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_rate"
+            app:layout_constraintStart_toStartOf="@+id/bg_rate"
+            app:layout_constraintTop_toTopOf="@+id/bg_rate"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/btn_chat"
+            android:layout_width="90dp"
+            android:layout_height="33dp"
+            android:background="@drawable/btn_wa"
+            android:textColor="@color/white"
+            android:text="Chat"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_rate" />
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="370dp"
+            android:layout_height="3dp"
+            android:background="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@+id/bg_dokter1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/bg_dokter2"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="25dp"
+            android:alpha="0.2"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_dokter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <ImageView
+            android:id="@+id/dr2_abdulmalik"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/drh_abdul_malik"
+            app:layout_constraintEnd_toEndOf="@+id/bg_dokter2"
+            app:layout_constraintStart_toStartOf="@+id/bg_dokter2"
+            app:layout_constraintTop_toTopOf="@id/bg_dokter2" />
+
+        <TextView
+            android:id="@+id/subjudul2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Dr. Abdul Malik"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/bg_dokter2"
+            app:layout_constraintTop_toTopOf="@+id/bg_dokter2" />
+
+        <TextView
+            android:id="@+id/text_subjudul2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dokter Hewan  Anjing"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/subjudul2"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul2" />
+
+        <TextView
+            android:id="@+id/bg_pengalaman2"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:text="7 Tahun"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:paddingLeft="35dp"
+            android:paddingTop="3dp"
+            android:background="@drawable/bg_chat_dokter"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@+id/text_subjudul2"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul2" />
+
+        <ImageView
+            android:id="@+id/ic_pengalaman2"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/pengalaman"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_pengalaman2"
+            app:layout_constraintStart_toStartOf="@+id/bg_pengalaman2"
+            app:layout_constraintTop_toTopOf="@+id/bg_pengalaman2"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/bg_rate2"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_chat_dokter"
+            android:fontFamily="@font/robotomedium"
+            android:paddingLeft="35dp"
+            android:paddingTop="4dp"
+            android:text="95%"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@+id/bg_pengalaman2"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul2" />
+
+        <ImageView
+            android:id="@+id/ic_rate2"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/bg_rate"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_rate2"
+            app:layout_constraintStart_toStartOf="@+id/bg_rate2"
+            app:layout_constraintTop_toTopOf="@+id/bg_rate2"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/btn_chat2"
+            android:layout_width="90dp"
+            android:layout_height="33dp"
+            android:background="@drawable/btn_wa"
+            android:textColor="@color/white"
+            android:text="Chat"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_rate2" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="370dp"
+            android:layout_height="3dp"
+            android:background="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@+id/bg_dokter2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/bg_dokter3"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="25dp"
+            android:alpha="0.2"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_dokter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+        <ImageView
+            android:id="@+id/dr3_bulqisSyahrin"
+            android:layout_width="130dp"
+            android:layout_height="135dp"
+            android:background="@drawable/drh_bulqis_syahrin"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_dokter3"
+            app:layout_constraintEnd_toEndOf="@+id/bg_dokter3"
+            app:layout_constraintStart_toStartOf="@+id/bg_dokter3"
+            app:layout_constraintTop_toTopOf="@id/bg_dokter3" />
+
+        <TextView
+            android:id="@+id/subjudul3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Drh. Bulqis Syahrin"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/bg_dokter3"
+            app:layout_constraintTop_toTopOf="@+id/bg_dokter3" />
+
+        <TextView
+            android:id="@+id/text_subjudul3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dokter Hewan Spesialis Bedah"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/subjudul3"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul3" />
+
+        <TextView
+            android:id="@+id/bg_pengalaman3"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:text="5 Tahun"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:paddingLeft="35dp"
+            android:paddingTop="3dp"
+            android:background="@drawable/bg_chat_dokter"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@+id/text_subjudul3"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul3" />
+
+        <ImageView
+            android:id="@+id/ic_pengalaman3"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/pengalaman"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_pengalaman3"
+            app:layout_constraintStart_toStartOf="@+id/bg_pengalaman3"
+            app:layout_constraintTop_toTopOf="@+id/bg_pengalaman3"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/bg_rate3"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_chat_dokter"
+            android:fontFamily="@font/robotomedium"
+            android:paddingLeft="35dp"
+            android:paddingTop="4dp"
+            android:text="85%"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@+id/bg_pengalaman3"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul3" />
+
+        <ImageView
+            android:id="@+id/ic_rate3"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/bg_rate"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_rate3"
+            app:layout_constraintStart_toStartOf="@+id/bg_rate3"
+            app:layout_constraintTop_toTopOf="@+id/bg_rate3"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/btn_chat3"
+            android:layout_width="90dp"
+            android:layout_height="33dp"
+            android:background="@drawable/btn_wa"
+            android:textColor="@color/white"
+            android:text="Chat"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_rate3" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="370dp"
+            android:layout_height="3dp"
+            android:background="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@+id/bg_dokter3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/bg_dokter4"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="25dp"
+            android:alpha="0.2"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_dokter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+        <ImageView
+            android:id="@+id/dr4_ahmadSyahrul"
+            android:layout_width="140dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/dr_ahmad_syahrul"
+            app:layout_constraintEnd_toEndOf="@+id/bg_dokter4"
+            app:layout_constraintStart_toStartOf="@+id/bg_dokter4"
+            app:layout_constraintTop_toTopOf="@id/bg_dokter4" />
+
+        <TextView
+            android:id="@+id/subjudul4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Prof. Dr. Ahmad Syahrul"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/bg_dokter4"
+            app:layout_constraintTop_toTopOf="@+id/bg_dokter4" />
+
+        <TextView
+            android:id="@+id/text_subjudul4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Dokter Hewan  Anjing"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/subjudul4"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul4" />
+
+        <TextView
+            android:id="@+id/bg_pengalaman4"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:text="7 Tahun"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:paddingLeft="35dp"
+            android:paddingTop="3dp"
+            android:background="@drawable/bg_chat_dokter"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@+id/text_subjudul4"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul4" />
+
+        <ImageView
+            android:id="@+id/ic_pengalaman4"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/pengalaman"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_pengalaman4"
+            app:layout_constraintStart_toStartOf="@+id/bg_pengalaman4"
+            app:layout_constraintTop_toTopOf="@+id/bg_pengalaman4"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/bg_rate4"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_chat_dokter"
+            android:fontFamily="@font/robotomedium"
+            android:paddingLeft="35dp"
+            android:paddingTop="4dp"
+            android:text="95%"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@+id/bg_pengalaman4"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul4" />
+
+        <ImageView
+            android:id="@+id/ic_rate4"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/bg_rate"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_rate4"
+            app:layout_constraintStart_toStartOf="@+id/bg_rate4"
+            app:layout_constraintTop_toTopOf="@+id/bg_rate4"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/btn_chat4"
+            android:layout_width="90dp"
+            android:layout_height="33dp"
+            android:background="@drawable/btn_wa"
+            android:textColor="@color/white"
+            android:text="Chat"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_rate4" />
+
+        <ImageView
+            android:id="@+id/line4"
+            android:layout_width="370dp"
+            android:layout_height="3dp"
+            android:background="@drawable/line"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/bg_dokter4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="25dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

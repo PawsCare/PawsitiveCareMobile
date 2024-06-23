@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".donasi">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_biru_tua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/panah"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Donasi"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/donasicheck"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/donasi0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/donasi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bayar"
+            android:text="Donasi"
+            android:layout_marginTop="20dp"
+            android:textSize="11sp"
+            android:paddingStart="40dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingEnd="40dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/donasi2"
+            app:layout_constraintStart_toStartOf="@+id/donasi2"
+            app:layout_constraintTop_toBottomOf="@+id/donasi2" />
+
+        <ImageView
+            android:id="@+id/donasi2"
+            android:layout_width="115dp"
+            android:layout_height="113dp"
+            android:background="@drawable/donasinew1"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="@+id/donasicheck"
+            app:layout_constraintTop_toTopOf="@+id/donasicheck"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/subjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aliansi Peduli Hewan Indonesia"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/donasi2"
+            app:layout_constraintTop_toTopOf="@id/donasicheck"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/textt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:justificationMode="inter_word"
+            android:text="Selayaknya bahwa setiap Hewan, berhak untuk mendapatkan kehidupan yang aman dan bahagia. Oleh sebab itu APHI membuat tempat penampungan hewan walaupun dengan segala keterbatasan demi untuk menyelamatkan serta memelihara hewan yang tidak bertuan. "
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/donasicheck"
+            app:layout_constraintStart_toEndOf="@id/donasi2"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul" />
+
+        <ImageView
+            android:id="@+id/donasicheck2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/donasi0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donasi1" />
+
+        <ImageView
+            android:id="@+id/donasi2new"
+            android:layout_width="115dp"
+            android:layout_height="113dp"
+            android:background="@drawable/donasinew2"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="@+id/donasicheck2"
+            app:layout_constraintTop_toTopOf="@+id/donasicheck2"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/subjudul2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donasi Untuk Hewan Sakit Dan \nTerlantar - Cat Rescue"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/donasi2new"
+            app:layout_constraintTop_toTopOf="@id/donasicheck2"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/texttt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:justificationMode="inter_word"
+            android:text="Anda dapat memberikan donasi untuk menolong kucing jalanan melalui TNR (Trap Neuter/Spay Return) atau Tangkap Steril Lepas. Donasi digunakan untuk sterilisasi kucing termasuk rawat inap dan transportasi, pengobatan kucing yang sakit, dan obat cacing dan obat kutu."
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/donasicheck2"
+            app:layout_constraintStart_toEndOf="@id/donasi2new"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul2" />
+
+        <TextView
+            android:id="@+id/donasi2button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bayar"
+            android:text="Donasi"
+            android:layout_marginTop="20dp"
+            android:textSize="11sp"
+            android:paddingStart="40dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingEnd="40dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/donasi2new"
+            app:layout_constraintStart_toStartOf="@+id/donasi2new"
+            app:layout_constraintTop_toBottomOf="@+id/donasi2new" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

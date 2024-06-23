@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "54226877324",
+    "project_id": "pawsitive-care-project",
+    "storage_bucket": "pawsitive-care-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54226877324:android:6c79e3f39bd7404c3cb4a9",
+        "android_client_info": {
+          "package_name": "com.example.pawsitivecare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXa_t7qvKXZvtro-2DANs92OH07uRJnVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

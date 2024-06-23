@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/clear_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".BeepetDaengta">
+
+        <ImageView
+            android:id="@+id/img_beepet_daengta"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_biru_tua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/panah"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_beepet_daengta"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/img_beepet_daengta" />
+
+        <TextView
+            android:id="@+id/text_beepet_daengta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="BeePetMart Petshop Daengta"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_beepet_daengta"
+            app:layout_constraintEnd_toEndOf="@+id/img_beepet_daengta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:id="@+id/beepet_daengta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/img_beepet_daengta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="411dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/img_beepet1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="411dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/img_beepet2" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="411dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/img_beepet3" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="411dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/img_beepet4" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="411dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/img_beepet5" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/beepet_daengta" />
+
+        <TextView
+            android:id="@+id/subjudul_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="BetPetMart Petshop Daengta"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView1"
+            app:layout_constraintTop_toBottomOf="@+id/beepet_daengta" />
+
+        <TextView
+            android:id="@+id/text_subjudul1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Klinik Hewan"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_1"
+            app:layout_constraintStart_toStartOf="@id/subjudul_1"/>
+
+        <ImageView
+            android:id="@+id/bg_star"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/star_bg"
+            app:layout_constraintBottom_toBottomOf="@id/imageView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+
+        <ImageView
+            android:id="@+id/starr"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/starr"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_star"
+            app:layout_constraintEnd_toEndOf="@+id/bg_star"
+            app:layout_constraintStart_toStartOf="@+id/bg_star"
+            app:layout_constraintTop_toTopOf="@+id/bg_star"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:id="@+id/rate_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotomedium"
+            android:text="4.7"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_star"
+            app:layout_constraintStart_toEndOf="@id/starr"
+            app:layout_constraintTop_toTopOf="@+id/bg_star"
+            android:layout_marginStart="10dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/subjudul_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Alamat"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@id/imageView2" />
+
+        <TextView
+            android:id="@+id/text_subjudul2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/alamatdaengta"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_2"
+            app:layout_constraintStart_toStartOf="@id/subjudul_2"/>
+
+        <TextView
+            android:id="@+id/subjudul_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="No Telepon/HP"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul2" />
+
+        <TextView
+            android:id="@+id/text_subjudul3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="0853-3477-7188"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_3"
+            app:layout_constraintStart_toStartOf="@id/subjudul_3"/>
+
+        <ImageView
+            android:id="@+id/Map"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@drawable/maps_daengta"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/subjudul_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/text_subjudul4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/text_profile"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:justificationMode="inter_word"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_4"
+            app:layout_constraintStart_toStartOf="@id/subjudul_4"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/subjudul_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Fasilitas Tersedia"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/text_subjudul5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/text_fasilitasDaengta"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:justificationMode="inter_word"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_5"
+            app:layout_constraintStart_toStartOf="@id/subjudul_5"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+        <ImageView
+            android:id="@+id/bg_dokter"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_dokter"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            android:alpha="0.5"/>
+
+        <ImageView
+            android:id="@+id/dr_ahmad"
+            android:layout_width="145dp"
+            android:layout_height="140dp"
+            android:background="@drawable/dr_ahmad_syahrul"
+            android:layout_marginTop="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/bg_dokter"
+            app:layout_constraintStart_toStartOf="@+id/bg_dokter"
+            app:layout_constraintTop_toTopOf="@id/bg_dokter" />
+
+        <TextView
+            android:id="@+id/subjudul_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Prof. Dr. Ahmad Syahrul"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/bg_dokter"
+            app:layout_constraintTop_toTopOf="@id/imageView5" />
+
+        <TextView
+            android:id="@+id/text_subjudul6"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:justificationMode="inter_word"
+            android:text="Dokter Hewan Spesialis Kucing"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/subjudul_6"
+            app:layout_constraintTop_toBottomOf="@+id/subjudul_6" />
+
+        <TextView
+            android:id="@+id/bg_pengalaman"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:text="9 Tahun"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:paddingLeft="35dp"
+            android:paddingTop="3dp"
+            android:background="@drawable/bg_pengalaman"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="@+id/text_subjudul6"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul6" />
+
+        <ImageView
+            android:id="@+id/ic_pengalaman"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/pengalaman"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_pengalaman"
+            app:layout_constraintStart_toStartOf="@+id/bg_pengalaman"
+            app:layout_constraintTop_toTopOf="@+id/bg_pengalaman"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/bg_rate"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_pengalaman"
+            android:fontFamily="@font/robotomedium"
+            android:paddingLeft="35dp"
+            android:paddingTop="4dp"
+            android:text="90%"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/bg_pengalaman"
+            app:layout_constraintTop_toBottomOf="@+id/text_subjudul6" />
+
+        <ImageView
+            android:id="@+id/ic_rate"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/bg_rate"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_rate"
+            app:layout_constraintStart_toStartOf="@+id/bg_rate"
+            app:layout_constraintTop_toTopOf="@+id/bg_rate"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/hubungiWA"
+            android:layout_width="150dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_wa"
+            android:fontFamily="@font/poppins_bold"
+            android:letterSpacing="0.1"
+            android:paddingLeft="24dp"
+            android:paddingTop="9dp"
+            android:text="Hubungi WA"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg_dokter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

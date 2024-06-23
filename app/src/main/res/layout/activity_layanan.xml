@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".layanan">
+
+    <ImageView
+        android:id="@+id/img_layanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_biru_tua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/panah"
+        app:layout_constraintBottom_toBottomOf="@+id/img_layanan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/layanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Layanan"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_layanan"
+        app:layout_constraintEnd_toEndOf="@+id/img_layanan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/img_layanan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:id="@+id/bgcekdog"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/kotak_layanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_cekdog"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cek"
+                app:layout_constraintBottom_toBottomOf="@+id/bgcekdog"
+                app:layout_constraintEnd_toEndOf="@+id/bgcekdog"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="@+id/bgcekdog"
+                app:layout_constraintTop_toTopOf="@+id/bgcekdog"
+                app:layout_constraintVertical_bias="0.533" />
+
+            <TextView
+                android:id="@+id/judul1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Anjing : Pemeriksaan Dokter Hewan"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bgcekdog"
+                app:layout_constraintTop_toTopOf="@id/img_cekdog" />
+
+            <TextView
+                android:id="@+id/subjudul1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="135dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Cek Dokter Hewan - Anjing"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/judul1"
+                app:layout_constraintTop_toBottomOf="@+id/judul1" />
+
+            <TextView
+                android:id="@+id/petshop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BeePetMart Petshop"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/subjudul1"
+                app:layout_constraintTop_toBottomOf="@+id/subjudul1" />
+
+            <TextView
+                android:id="@+id/harga1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp170.000"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/petshop1"
+                app:layout_constraintTop_toBottomOf="@+id/petshop1"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/button1"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="106dp"
+                android:background="@drawable/button_lihat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/line1"
+                android:layout_marginBottom="35dp"/>
+
+            <TextView
+                android:id="@+id/text_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat"
+                android:textColor="@color/biruTua"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button1"
+                app:layout_constraintEnd_toEndOf="@+id/button1"
+                app:layout_constraintStart_toStartOf="@+id/button1"
+                app:layout_constraintTop_toTopOf="@+id/button1"/>
+
+            <ImageView
+                android:id="@+id/line1"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="315dp"
+                android:alpha="0.3"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/button1"
+                app:layout_constraintStart_toStartOf="@+id/img_cekdog"
+                app:layout_constraintTop_toBottomOf="@id/bgcekdog"
+                android:layout_marginTop="15dp"/>
+
+            <!-- cek kucing -->
+            <ImageView
+                android:id="@+id/bgcekcat"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/kotak_layanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_cekcat"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cek"
+                app:layout_constraintBottom_toBottomOf="@+id/bgcekcat"
+                app:layout_constraintEnd_toEndOf="@+id/bgcekcat"
+                app:layout_constraintStart_toStartOf="@+id/bgcekcat"
+                app:layout_constraintTop_toTopOf="@+id/bgcekcat" />
+
+            <TextView
+                android:id="@+id/judul2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Kucing : Pemeriksaan Dokter Hewan"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bgcekcat"
+                app:layout_constraintTop_toBottomOf="@+id/line1"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/subjudul2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="135dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Cek Dokter Hewan - Kucing"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/judul2"
+                app:layout_constraintTop_toBottomOf="@+id/judul2" />
+
+            <TextView
+                android:id="@+id/petshop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BeePetMart Petshop"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/subjudul2"
+                app:layout_constraintTop_toBottomOf="@+id/subjudul2" />
+
+            <TextView
+                android:id="@+id/harga2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp170.000"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/petshop2"
+                app:layout_constraintTop_toBottomOf="@+id/petshop2"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="98dp"
+                android:background="@drawable/button_lihat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+            <TextView
+                android:id="@+id/text_button2"
+                android:layout_width="33dp"
+                android:layout_height="18dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat"
+                android:textColor="@color/biruTua"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="@+id/button2"
+                app:layout_constraintStart_toStartOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="@+id/button2" />
+
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="315dp"
+                android:alpha="0.3"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/button2"
+                app:layout_constraintStart_toStartOf="@+id/img_cekcat"
+                app:layout_constraintTop_toBottomOf="@id/bgcekcat"
+                android:layout_marginTop="15dp"/>
+
+
+            <!-- grooming anjing -->
+            <ImageView
+                android:id="@+id/bgrawatdog"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/kotak_layanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_rawatdog"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/grooming"
+                app:layout_constraintBottom_toBottomOf="@+id/bgrawatdog"
+                app:layout_constraintEnd_toEndOf="@+id/bgrawatdog"
+                app:layout_constraintStart_toStartOf="@+id/bgrawatdog"
+                app:layout_constraintTop_toTopOf="@+id/bgrawatdog"
+                />
+
+            <TextView
+                android:id="@+id/judul3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Anjing : Grooming Komplit Kutu + Jamur"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bgrawatdog"
+                app:layout_constraintTop_toBottomOf="@+id/line2"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/subjudul3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="135dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Grooming - Anjing"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/judul3"
+                app:layout_constraintTop_toBottomOf="@+id/judul3" />
+
+            <TextView
+                android:id="@+id/petshop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BeePetMart Petshop"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/subjudul3"
+                app:layout_constraintTop_toBottomOf="@+id/subjudul3" />
+
+            <TextView
+                android:id="@+id/harga3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp120.000"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/petshop3"
+                app:layout_constraintTop_toBottomOf="@+id/petshop3"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/button3"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="98dp"
+                android:background="@drawable/button_lihat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+            <TextView
+                android:id="@+id/text_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat"
+                android:textColor="@color/biruTua"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="@+id/button3"
+                app:layout_constraintStart_toStartOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="@+id/button3"/>
+
+            <ImageView
+                android:id="@+id/line3"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="315dp"
+                android:alpha="0.3"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/button3"
+                app:layout_constraintStart_toStartOf="@+id/img_rawatdog"
+                app:layout_constraintTop_toBottomOf="@id/bgrawatdog"
+                android:layout_marginTop="15dp"/>
+
+
+            <!-- grooming kucing -->
+            <ImageView
+                android:id="@+id/bgrawatcat"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/kotak_layanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line3"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_rawatcat"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/grooming"
+                app:layout_constraintBottom_toBottomOf="@+id/bgrawatcat"
+                app:layout_constraintEnd_toEndOf="@+id/bgrawatcat"
+                app:layout_constraintStart_toStartOf="@+id/bgrawatcat"
+                app:layout_constraintTop_toTopOf="@+id/bgrawatcat" />
+
+            <TextView
+                android:id="@+id/judul4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Kucing : Grooming Komplit Kutu + Jamur"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bgrawatcat"
+                app:layout_constraintTop_toBottomOf="@+id/line3"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/subjudul4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="135dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Grooming - Kucing"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/judul4"
+                app:layout_constraintTop_toBottomOf="@+id/judul4" />
+
+            <TextView
+                android:id="@+id/petshop4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BeePetMart Petshop"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/subjudul4"
+                app:layout_constraintTop_toBottomOf="@+id/subjudul4" />
+
+            <TextView
+                android:id="@+id/harga4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp105.000"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/petshop4"
+                app:layout_constraintTop_toBottomOf="@+id/petshop4"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/button4"
+                android:layout_width="56dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="98dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/button_lihat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+            <TextView
+                android:id="@+id/text_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat"
+                android:textColor="@color/biruTua"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toTopOf="@+id/button4"/>
+
+            <ImageView
+                android:id="@+id/line4"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="315dp"
+                android:alpha="0.3"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintStart_toStartOf="@+id/img_rawatcat"
+                app:layout_constraintTop_toBottomOf="@id/bgrawatcat"
+                android:layout_marginTop="15dp"/>
+
+
+            <!-- vaksin anjing -->
+            <ImageView
+                android:id="@+id/bgvaksindog"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/kotak_layanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line4"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_vaksindog"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/suntik"
+                app:layout_constraintBottom_toBottomOf="@+id/bgvaksindog"
+                app:layout_constraintEnd_toEndOf="@+id/bgvaksindog"
+                app:layout_constraintStart_toStartOf="@+id/bgvaksindog"
+                app:layout_constraintTop_toTopOf="@+id/bgvaksindog"
+                android:rotation="-10"/>
+
+
+            <TextView
+                android:id="@+id/judul5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Anjing : Vaksin Eurican 4"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bgvaksindog"
+                app:layout_constraintTop_toBottomOf="@+id/line4"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/subjudul5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="135dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Vaksin - Anjing"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/judul5"
+                app:layout_constraintTop_toBottomOf="@+id/judul5" />
+
+            <TextView
+                android:id="@+id/petshop5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BeePetMart Petshop"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/subjudul5"
+                app:layout_constraintTop_toBottomOf="@+id/subjudul5" />
+
+            <TextView
+                android:id="@+id/harga5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp270.000"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/petshop5"
+                app:layout_constraintTop_toBottomOf="@+id/petshop5"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/button5"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="98dp"
+                android:background="@drawable/button_lihat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line4" />
+
+            <TextView
+                android:id="@+id/text_button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat"
+                android:textColor="@color/biruTua"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button5"
+                app:layout_constraintEnd_toEndOf="@+id/button5"
+                app:layout_constraintStart_toStartOf="@+id/button5"
+                app:layout_constraintTop_toTopOf="@+id/button5"/>
+
+            <ImageView
+                android:id="@+id/line5"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="315dp"
+                android:alpha="0.3"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/button5"
+                app:layout_constraintStart_toStartOf="@+id/img_rawatcat"
+                app:layout_constraintTop_toBottomOf="@id/bgvaksindog"
+                android:layout_marginTop="15dp"/>
+
+            <!-- vaksin kucing 1 -->
+            <ImageView
+                android:id="@+id/bgvaksincat1"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/kotak_layanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line5"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_vaksincat1"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/suntik"
+                app:layout_constraintBottom_toBottomOf="@+id/bgvaksincat1"
+                app:layout_constraintEnd_toEndOf="@+id/bgvaksincat1"
+                app:layout_constraintStart_toStartOf="@+id/bgvaksincat1"
+                app:layout_constraintTop_toTopOf="@+id/bgvaksincat1"
+                android:rotation="-10"/>
+
+            <TextView
+                android:id="@+id/judul6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Kucing : Vaksin Felocell 3"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bgvaksincat1"
+                app:layout_constraintTop_toBottomOf="@+id/line5"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/subjudul6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="135dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Vaksin - Kucing"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/judul6"
+                app:layout_constraintTop_toBottomOf="@+id/judul6" />
+
+            <TextView
+                android:id="@+id/petshop6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BeePetMart Petshop"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/subjudul6"
+                app:layout_constraintTop_toBottomOf="@+id/subjudul6" />
+
+            <TextView
+                android:id="@+id/harga6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp180.000"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/petshop6"
+                app:layout_constraintTop_toBottomOf="@+id/petshop6"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/button6"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="98dp"
+                android:background="@drawable/button_lihat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line5" />
+
+            <TextView
+                android:id="@+id/text_button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat"
+                android:textColor="@color/biruTua"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button6"
+                app:layout_constraintEnd_toEndOf="@+id/button6"
+                app:layout_constraintStart_toStartOf="@+id/button6"
+                app:layout_constraintTop_toTopOf="@+id/button6"/>
+
+            <ImageView
+                android:id="@+id/line6"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="315dp"
+                android:alpha="0.3"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/button6"
+                app:layout_constraintStart_toStartOf="@+id/img_vaksincat1"
+                app:layout_constraintTop_toBottomOf="@id/bgvaksincat1"
+                android:layout_marginTop="15dp"/>
+
+
+            <!-- vaksin kucing 2 -->
+            <ImageView
+                android:id="@+id/bgvaksincat2"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/kotak_layanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line6"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_vaksincat2"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/suntik"
+                app:layout_constraintBottom_toBottomOf="@+id/bgvaksincat2"
+                app:layout_constraintEnd_toEndOf="@+id/bgvaksincat2"
+                app:layout_constraintStart_toStartOf="@+id/bgvaksincat2"
+                app:layout_constraintTop_toTopOf="@+id/bgvaksincat2"
+                android:rotation="-10"/>
+
+            <TextView
+                android:id="@+id/judul7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Kucing : Vaksin Purevax"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bgvaksincat2"
+                app:layout_constraintTop_toBottomOf="@+id/line6"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/subjudul7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="135dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Vaksin - Kucing"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/judul7"
+                app:layout_constraintTop_toBottomOf="@+id/judul7" />
+
+            <TextView
+                android:id="@+id/petshop7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BeePetMart Petshop"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/subjudul7"
+                app:layout_constraintTop_toBottomOf="@+id/subjudul7" />
+
+            <TextView
+                android:id="@+id/harga7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp300.000"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/petshop7"
+                app:layout_constraintTop_toBottomOf="@+id/petshop7"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/button7"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="98dp"
+                android:background="@drawable/button_lihat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line6" />
+
+            <TextView
+                android:id="@+id/text_button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat"
+                android:textColor="@color/biruTua"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button7"
+                app:layout_constraintEnd_toEndOf="@+id/button7"
+                app:layout_constraintStart_toStartOf="@+id/button7"
+                app:layout_constraintTop_toTopOf="@+id/button7"/>
+
+            <ImageView
+                android:id="@+id/line7"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="315dp"
+                android:alpha="0.3"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/button7"
+                app:layout_constraintStart_toStartOf="@+id/img_vaksincat2"
+                app:layout_constraintTop_toBottomOf="@id/bgvaksincat2"
+                android:layout_marginTop="15dp"/>
+
+
+            <!-- vaksin kucing anjing -->
+            <ImageView
+                android:id="@+id/bgvaksin_catdog"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/kotak_layanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line7"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_vaksin_catdog"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/suntik"
+                app:layout_constraintBottom_toBottomOf="@+id/bgvaksin_catdog"
+                app:layout_constraintEnd_toEndOf="@+id/bgvaksin_catdog"
+                app:layout_constraintStart_toStartOf="@+id/bgvaksin_catdog"
+                app:layout_constraintTop_toTopOf="@+id/bgvaksin_catdog"
+                android:rotation="-10"/>
+
+            <TextView
+                android:id="@+id/judul8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Vaksin Rabies"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bgvaksin_catdog"
+                app:layout_constraintTop_toBottomOf="@+id/line7"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/subjudul8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="135dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Vaksin - Kucing dan Anjing"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/judul8"
+                app:layout_constraintTop_toBottomOf="@+id/judul8" />
+
+            <TextView
+                android:id="@+id/petshop8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="168dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BeePetMart Petshop"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="@+id/subjudul8"
+                app:layout_constraintTop_toBottomOf="@+id/subjudul8" />
+
+            <TextView
+                android:id="@+id/harga8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp150.000"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/petshop8"
+                app:layout_constraintTop_toBottomOf="@+id/petshop8"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/button8"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="98dp"
+                android:background="@drawable/button_lihat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line7" />
+
+            <TextView
+                android:id="@+id/text_button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat"
+                android:textColor="@color/biruTua"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button8"
+                app:layout_constraintEnd_toEndOf="@+id/button8"
+                app:layout_constraintStart_toStartOf="@+id/button8"
+                app:layout_constraintTop_toTopOf="@+id/button8"/>
+
+            <ImageView
+                android:id="@+id/line8"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="315dp"
+                android:alpha="0.3"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/button8"
+                app:layout_constraintStart_toStartOf="@+id/img_vaksin_catdog"
+                app:layout_constraintTop_toBottomOf="@id/bgvaksin_catdog"
+                android:layout_marginTop="15dp"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

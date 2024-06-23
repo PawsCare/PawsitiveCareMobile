@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pawsitive Care</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Sign In to Continue</string>
+    <string name="text_dog4">- Pembatalan janji kunjungan dapat dilakukan melalui aplikasi sesuai dengan kebijakan jangka waktu dari Mitra Pawsitive Care.\n- Pengembalian dana dari Gopay atau dana membutuhkan waktu 3 hari kerja.\n- Jika Anda memiliki kendala atau pertanyaan lebih lanjut, mohon hubungi Customer Service kami melalui menu bantuan pada aplikasi Pawsitive Care.</string>
+    <string name="alamat">Alamat</string>
+    <string name="text_alamat">Komplek Mall Futsal Jl. Daeng Tata Raya 44 (samping Indomaret pertigaan Mannuruki, Parang Tambung, Makassar, Kota Makassar, Sulawesi Selatan 90224</string>
+    <string name="notelp">Nomor Telepon/HP</string>
+    <string name="text_notelp">0853-3477-7188</string>
+    <string name="alamatdaengta">Komplek Mall Futsal Jl. Daeng Tata Raya 44 (samping Indomaret pertigaan Mannuruki, Parang Tambung, Makassar, Kota Makassar, Sulawesi Selatan 90224</string>
+    <string name="text_profile">BetPetMart Petshop Daengta merupakan salah satu petshop terlengkap di Selatan Kota Makassar, dilengkapi pelayanan dokter hewan dan cat hotel serta layanan Grooming di kelola oleh groomer professional di Makassar</string>
+    <string name="text_fasilitasDaengta">Fasilitas yang tersedia di Beepet Mart Daengta mencakup penjualan perlengkapan hewan, pelayanan vaksinasi dan konsultasi medis, layanan grooming, pelatihan hewan, penitipan hewan, dan penjualan berbagai jenis hewan peliharaan.</string>
+    <string name="alamat_beepet_mks">Jl. Monumen Emmy Saelan No.103, Tidung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan 90222</string>
+    <string name="text_profile_beepetmks">Beepet Mart Makassar merupakan toko hewan peliharaan yang menyediakan berbagai macam perlengkapan, makanan, dan pelayanan medis untuk hewan peliharaan Anda.</string>
+    <string name="fasilitas_beepet_mks">Fasilitas yang tersedia di Beepet Mart Makassar mencakup penjualan perlengkapan hewan, pelayanan vaksinasi dan konsultasi medis, layanan grooming, penjualan berbagai jenis hewan peliharaan, serta penyediaan obat-obatan dan suplemen kesehatan hewan.</string>
+    <string name="alamat_amigos_mks">Jl. Landak Lama No.89, Mamajang Dalam, Kec. Mamajang, Kota Makassar, Sulawesi Selatan 90132</string>
+    <string name="text_profile_amigos">Amigos Petshop Makassar adalah petshop terbaik di kota Makassar yang menyediakan berbagai kebutuhan hewan peliharaan. Kami menawarkan penjualan perlengkapan dan pakan hewan peliharaan terlengkap dan berkualitas. Dengan berbagai produk dan layanan yang kami sediakan, kami siap membantu Anda merawat hewan peliharaan kesayangan dengan baik. Kunjungi Amigos Petshop Makassar sekarang dan temukan produk terbaik untuk hewan peliharaan Anda.</string>
+    <string name="fasilitas_amigos">Amigos Petshop Makassar menyediakan penjualan makanan, perlengkapan, dan mainan untuk hewan peliharaan. Kami juga menawarkan layanan grooming untuk kucing dan anjing serta konsultasi perawatan hewan peliharaan.</string>
+</resources>
